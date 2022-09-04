@@ -1,14 +1,17 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def home():
-    return 'Hello, World!'
+    return render_template('home.html')
+
 
 @app.route('/localizacao')
 def localizacao():
-    return 'Estamos localizados na Rua Lucas Evangelista, 305 - Centro, Bebedouro - SP'
+    return render_template('localizacao.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
