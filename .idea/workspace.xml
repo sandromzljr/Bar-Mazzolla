@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41929cf2-6e2c-4235-a182-264da4b1fa0b" name="Changes" comment="diff">
-      <change afterPath="$PROJECT_DIR$/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image/beer-mug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/sobre.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user.html" afterDir="false" />
+    <list default="true" id="41929cf2-6e2c-4235-a182-264da4b1fa0b" name="Changes" comment="XML">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +168,42 @@
       <option name="project" value="LOCAL" />
       <updated>1662310975568</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Arquivos HTML">
+      <created>1662322671299</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662322671299</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Main">
+      <created>1662322693888</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1662322693888</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Forms">
+      <created>1662322702316</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662322702316</updated>
+    </task>
+    <task id="LOCAL-00012" summary="PNG">
+      <created>1662322709413</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662322709413</updated>
+    </task>
+    <task id="LOCAL-00013" summary="XML">
+      <created>1662322718212</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1662322718212</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +223,11 @@
     <MESSAGE value="Criação block body" />
     <MESSAGE value="Arquivo HTML base" />
     <MESSAGE value="diff" />
-    <option name="LAST_COMMIT_MESSAGE" value="diff" />
+    <MESSAGE value="Arquivos HTML" />
+    <MESSAGE value="Main" />
+    <MESSAGE value="Forms" />
+    <MESSAGE value="PNG" />
+    <MESSAGE value="XML" />
+    <option name="LAST_COMMIT_MESSAGE" value="XML" />
   </component>
 </project>
