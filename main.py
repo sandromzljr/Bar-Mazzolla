@@ -1,10 +1,14 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, request, flash, redirect
 from forms import FormCriarConta, FormLogin
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
 
 app.config['SECRET_KEY'] = 'bar_mazzolla'
+app.config['SQLACHEMY_DATABASE_URI'] = 'sqlite:///barmazzolla.bd'
+
+database = SQLAlchemy(app)
 
 
 @app.route('/')
@@ -28,10 +32,18 @@ def usuarios():
     return render_template('user.html', userList=userList)
 
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     formLogin = FormLogin()
     formCriarConta = FormCriarConta()
+
+    if formLogin.validate_on_submit() and 'btn_submit_login' in request.form:
+        flash('{} logado com sucesso!'.format(formLogin.email.data), 'alert-sucess')
+        return redirect(url_for('home'))
+    if formCriarConta.validate_on_submit() and 'btn_submit_signup' in request.form:
+        flash('Conta criado com sucesso para o e-mail: {}'.format(formCriarConta.email.data), 'alert-sucess')
+        return redirect(url_for('home'))
+
     return render_template('login.html', formLogin=formLogin, formCriarConta=formCriarConta)
 
 
