@@ -11,7 +11,19 @@
 </head>
 <body style="background-color: #F09F06; color: #0C0C0C">
 
-{% include 'navbar.html' %}
+    {% include 'navbar.html' %}
+
+        <div class="container" style="color: #0C0C0C; font-size: 2em">
+            {% with mensagens = get_flashed_messages(with_categories=True) %}
+                {% if mensagens %}
+                    {% for categoria, mensagem in mensagens %}
+                        <div class="alert {{ category }}">
+                            {{ mensagem }}
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
 
     {% block body %}
     {% endblock %}
