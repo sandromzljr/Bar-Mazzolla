@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 
 app.config['SECRET_KEY'] = 'bar_mazzolla'
-app.config['SQLACHEMY_DATABASE_URI'] = 'sqlite:///barmazzolla.bd'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///barmazzolla.bd'
 
 database = SQLAlchemy(app)
 
