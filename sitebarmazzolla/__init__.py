@@ -8,3 +8,5 @@ app.config['SECRET_KEY'] = 'bar_mazzolla'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///barmazzolla.bd'
 
 database = SQLAlchemy(app)
+
+from sitebarmazzolla import routes

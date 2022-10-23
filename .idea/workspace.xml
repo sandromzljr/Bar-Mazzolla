@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41929cf2-6e2c-4235-a182-264da4b1fa0b" name="Changes" comment="BD">
-      <change afterPath="$PROJECT_DIR$/sitebarmazzolla/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sitebarmazzolla/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/barmazzolla.bd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/localizacao.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/localizacao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sobre.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/sobre.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/user.html" afterDir="false" />
+    <list default="true" id="41929cf2-6e2c-4235-a182-264da4b1fa0b" name="Changes" comment="Reestruturando o projeto">
+      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663518055265</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Reestruturando o projeto">
+      <created>1666553406089</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1666553406089</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,6 +316,7 @@
     <MESSAGE value="Models" />
     <MESSAGE value="Main" />
     <MESSAGE value="BD" />
-    <option name="LAST_COMMIT_MESSAGE" value="BD" />
+    <MESSAGE value="Reestruturando o projeto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reestruturando o projeto" />
   </component>
 </project>
