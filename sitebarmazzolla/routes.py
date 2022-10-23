@@ -1,6 +1,7 @@
 from flask import render_template, redirect, url_for, flash, request
-from sitebarmazzolla import app
+from sitebarmazzolla import app, database
 from sitebarmazzolla.forms import FormLogin, FormCriarConta
+from sitebarmazzolla.models import Usuario
 
 
 @app.route('/')
@@ -33,7 +34,10 @@ def login():
         flash('{} logado com sucesso!'.format(formLogin.email.data), 'alert-sucess')
         return redirect(url_for('home'))
     if formCriarConta.validate_on_submit() and 'btn_submit_signup' in request.form:
-        flash('Conta criado com sucesso para o e-mail: {}'.format(formCriarConta.email.data), 'alert-sucess')
+        usuario = Usuario(username=formCriarConta.username.data, email=formCriarConta.email.data, senha=formCriarConta.senha.data)
+        database.session.add(usuario)
+        database.session.commit()
+        # flash('Conta criado com sucesso para o e-mail: {}'.format(formCriarConta.email.data), 'alert-sucess')
         return redirect(url_for('home'))
 
     return render_template('login.html', formLogin=formLogin, formCriarConta=formCriarConta)
