@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41929cf2-6e2c-4235-a182-264da4b1fa0b" name="Changes" comment="fix __init__.py -&gt; import routes.py">
-      <change afterPath="$PROJECT_DIR$/sitebarmazzolla/barmazzolla.bd" afterDir="false" />
+    <list default="true" id="41929cf2-6e2c-4235-a182-264da4b1fa0b" name="Changes" comment="feature: remove folder &quot;image&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/barmazzolla.bd" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/barmazzolla.bd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitebarmazzolla/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/routes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -297,7 +300,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666553537040</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="feature: add database, create user from forms.py">
+      <created>1666554588378</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1666554588378</updated>
+    </task>
+    <task id="LOCAL-00028" summary="feature: remove folder &quot;image&quot;">
+      <created>1666554656520</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1666554656520</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,6 +344,8 @@
     <MESSAGE value="BD" />
     <MESSAGE value="Reestruturando o projeto" />
     <MESSAGE value="fix __init__.py -&gt; import routes.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix __init__.py -&gt; import routes.py" />
+    <MESSAGE value="feature: add database, create user from forms.py" />
+    <MESSAGE value="feature: remove folder &quot;image&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: remove folder &quot;image&quot;" />
   </component>
 </project>
