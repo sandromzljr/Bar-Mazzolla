@@ -4,13 +4,6 @@ from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationE
 from sitebarmazzolla.models import Usuario
 
 
-class FormLogin(FlaskForm):
-    email = StringField('E-mail', validators=[DataRequired(), Email()])
-    senha = PasswordField('Senha', validators=[DataRequired(), Length(8, 20)])
-    btn_submit_login = SubmitField('Fazer Login')
-    remember_me = BooleanField('Lembrar-me')
-
-
 class FormCriarConta(FlaskForm):
     username = StringField('Nome de Usuário', validators=[DataRequired()])
     email = StringField('E-mail', validators=[DataRequired(), Email()])
@@ -23,3 +16,10 @@ class FormCriarConta(FlaskForm):
         usuario = Usuario.query.filter_by(email=email.data).first()
         if usuario:
             raise ValidationError('E-mail já cadastrado. Cadastre-se ou faça login para continuar.')
+
+
+class FormLogin(FlaskForm):
+    email = StringField('E-mail', validators=[DataRequired(), Email()])
+    senha = PasswordField('Senha', validators=[DataRequired(), Length(8, 20)])
+    btn_submit_login = SubmitField('Fazer Login')
+    remember_me = BooleanField('Lembrar-me')
