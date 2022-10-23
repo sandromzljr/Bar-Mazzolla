@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41929cf2-6e2c-4235-a182-264da4b1fa0b" name="Changes" comment="feature: change SECRET_KEY, add bcript user pw, add check unique email signup">
+    <list default="true" id="41929cf2-6e2c-4235-a182-264da4b1fa0b" name="Changes" comment="feature: add login session, remember login session">
+      <change afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/criar_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/perfil.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/barmazzolla.bd" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/barmazzolla.bd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitebarmazzolla/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,16 +43,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/dev/mazzollaBar&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/dev/mazzollaBar/sitebarmazzolla/templates"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev\mazzollaBar\sitebarmazzolla\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\dev\mazzollaBar\sitebarmazzolla" />
       <recent name="D:\dev\mazzollaBar\attach" />
@@ -321,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666556696351</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="feature: add login session, remember login session">
+      <created>1666558378443</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1666558378443</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -354,6 +363,7 @@
     <MESSAGE value="feature: add database, create user from forms.py" />
     <MESSAGE value="feature: remove folder &quot;image&quot;" />
     <MESSAGE value="feature: change SECRET_KEY, add bcript user pw, add check unique email signup" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: change SECRET_KEY, add bcript user pw, add check unique email signup" />
+    <MESSAGE value="feature: add login session, remember login session" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: add login session, remember login session" />
   </component>
 </project>

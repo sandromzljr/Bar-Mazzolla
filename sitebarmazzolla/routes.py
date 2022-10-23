@@ -2,7 +2,7 @@ from flask import render_template, redirect, url_for, flash, request
 from sitebarmazzolla import app, database, bcrypt
 from sitebarmazzolla.forms import FormLogin, FormCriarConta
 from sitebarmazzolla.models import Usuario
-from flask_login import login_user
+from flask_login import login_user, logout_user, current_user
 
 
 @app.route('/')
@@ -48,3 +48,16 @@ def login():
         flash('Conta criado com sucesso para o e-mail: {}'.format(formCriarConta.email.data), 'alert-sucess')
         return redirect(url_for('home'))
     return render_template('login.html', formLogin=formLogin, formCriarConta=formCriarConta)
+
+@app.route('/sair')
+def sair():
+    logout_user()
+    return redirect(url_for('home'))
+
+@app.route('/perfil')
+def perfil():
+    return render_template('perfil.html')
+
+@app.route('/post/criar')
+def criar_post():
+    return render_template('criar_post.html')
