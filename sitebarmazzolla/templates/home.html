@@ -1,7 +1,23 @@
 {% extends 'base.html' %}
 
 {% block body %}
-    <div class="container">
-        <h1>Hello, World!</h1>
+<div class="container mt-4 mb-4">
+    <h1 style="color: #852B17">Bar do Mazzolla</h1>
+    <h2 style="color: #0C0C0C">Encontro de Amigos e Cerveja Gelada em um só lugar</h2>
+    <hr>
+    {% for post in posts %}
+    <div class="row mt-4 p-4 meupost">
+        <div class="col col-3">
+            <div class="image pe-2">
+                <img src="{{ url_for('static', filename='fotos_perfil/{}'.format(post.autor.foto_perfil)) }}" class="rounded" width="155" >
+            </div>
+            <strong style="text-align:center">{{ post.autor.username }}</strong>
+        </div>
+        <div class="col col-9 mt-4 p-4 meupost2">
+            <h3>{{ post.titulo }}</h3>
+            <p>{{ post.corpo }}</p>
+        </div>
     </div>
+    {% endfor %}
+</div>
 {% endblock %}
