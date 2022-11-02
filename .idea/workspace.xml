@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41929cf2-6e2c-4235-a182-264da4b1fa0b" name="Changes" comment="feature: add edit perfil; add route; add forms">
+    <list default="true" id="41929cf2-6e2c-4235-a182-264da4b1fa0b" name="Changes" comment="feature: add code for edit profile, add code for edit photo profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitebarmazzolla/barmazzolla.bd" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/barmazzolla.bd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitebarmazzolla/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitebarmazzolla/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/templates/editarperfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/editarperfil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/templates/perfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/perfil.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -359,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667419094540</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="feature: add code for edit profile, add code for edit photo profile">
+      <created>1667421291961</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1667421291961</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -397,6 +405,7 @@
     <MESSAGE value="feature: add block content for non logged users ; add smart redirect" />
     <MESSAGE value="feature: add css perfil; add photo at perfil; add routes perfil config; add main.css" />
     <MESSAGE value="feature: add edit perfil; add route; add forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: add edit perfil; add route; add forms" />
+    <MESSAGE value="feature: add code for edit profile, add code for edit photo profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: add code for edit profile, add code for edit photo profile" />
   </component>
 </project>

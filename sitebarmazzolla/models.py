@@ -14,7 +14,6 @@ class Usuario(database.Model, UserMixin):
     email = database.Column(database.String, nullable=False, unique=True)
     foto_perfil = database.Column(database.String, default='default.jpg')
     posts = database.relationship('Post', backref='autor', lazy=True)
-    # produtos = database.Column(database.String, nullable=False, default='Não Informado')
 
 
 class Post(database.Model):
