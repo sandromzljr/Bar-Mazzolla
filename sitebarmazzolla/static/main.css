@@ -1,0 +1,26 @@
+.card{
+  width: 400px;
+  border: none;
+  border-radius: 10px;
+
+  background-color: #852B17;
+
+  color: #CCC;
+}
+
+.stats{
+  background: #F09F06 !important;
+  color: #000 !important;
+}
+
+.articles{
+  font-size:15px;
+  font-weight:500;
+  color: #0C0C0C;
+}
+
+.number1{
+  font-size:15px;
+  font-weight:500;
+  color: #0C0C0C;
+}
