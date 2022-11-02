@@ -2,7 +2,7 @@ from flask import render_template, redirect, url_for, flash, request
 from sitebarmazzolla import app, database, bcrypt
 from sitebarmazzolla.forms import FormLogin, FormCriarConta
 from sitebarmazzolla.models import Usuario
-from flask_login import login_user, logout_user, current_user
+from flask_login import login_user, logout_user, current_user, login_required
 
 
 @app.route('/')
@@ -20,7 +20,8 @@ def localizacao():
     return render_template('localizacao.html')
 
 
-@app.route('/lista-usuarios')
+@app.route('/usuarios')
+@login_required
 def usuarios():
     userList = ['Sandro', 'Marina', 'Augusto', 'Jean']
     return render_template('user.html', userList=userList)
@@ -36,7 +37,11 @@ def login():
         if usuario and bcrypt.check_password_hash(usuario.senha, formLogin.senha.data):
             login_user(usuario, remember=formLogin.remember_me.data)
             flash('{} logado com sucesso!'.format(formLogin.email.data), 'alert-sucess')
-            return redirect(url_for('home'))
+            par_next = request.args.get('next')
+            if par_next:
+                return  redirect(par_next)
+            else:
+                return redirect(url_for('home'))
         else:
             flash('Login incorreto. Verifique seu e-mail ou senha.', 'alert-danger')
 
@@ -50,14 +55,17 @@ def login():
     return render_template('login.html', formLogin=formLogin, formCriarConta=formCriarConta)
 
 @app.route('/sair')
+@login_required
 def sair():
     logout_user()
     return redirect(url_for('home'))
 
 @app.route('/perfil')
+@login_required
 def perfil():
     return render_template('perfil.html')
 
 @app.route('/post/criar')
+@login_required
 def criar_post():
     return render_template('criar_post.html')

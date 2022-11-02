@@ -11,5 +11,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///barmazzolla.bd'
 database = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager(app)
+login_manager.login_view = 'login'
+login_manager.login_message = 'Para visualizar este conteúdo, faça Login.'
 
 from sitebarmazzolla import routes
