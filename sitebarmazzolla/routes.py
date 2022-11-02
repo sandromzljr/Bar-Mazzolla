@@ -26,7 +26,7 @@ def localizacao():
 @app.route('/usuarios')
 @login_required
 def usuarios():
-    userList = ['Sandro', 'Marina', 'Augusto', 'Jean']
+    userList = Usuario.query.all()
     return render_template('user.html', userList=userList)
 
 
