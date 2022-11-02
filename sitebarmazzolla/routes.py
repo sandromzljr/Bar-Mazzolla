@@ -1,7 +1,7 @@
 from flask import render_template, redirect, url_for, flash, request
 from sitebarmazzolla import app, database, bcrypt
-from sitebarmazzolla.forms import FormLogin, FormCriarConta, FormEditarPerfil
-from sitebarmazzolla.models import Usuario
+from sitebarmazzolla.forms import FormLogin, FormCriarConta, FormEditarPerfil, FormCriarPost
+from sitebarmazzolla.models import Usuario, Post
 from flask_login import login_user, logout_user, current_user, login_required
 import secrets
 import os
@@ -69,10 +69,17 @@ def perfil():
     foto_perfil = url_for('static', filename='fotos_perfil/{}'.format(current_user.foto_perfil))
     return render_template('perfil.html', foto_perfil=foto_perfil)
 
-@app.route('/post/criar')
+@app.route('/post/criar', methods=['GET', 'POST'])
 @login_required
 def criar_post():
-    return render_template('criar_post.html')
+    form = FormCriarPost()
+    if form.validate_on_submit():
+        post = Post(titulo=form.titulo.data, corpo=form.corpo.data, autor=current_user)
+        database.session.add(post)
+        database.session.commit()
+        flash('Conversa Iniciada com Sucesso!', 'alert-success')
+        return redirect(url_for('home'))
+    return render_template('criar_post.html', form=form)
 
 def salvar_imagem(imagem):
     codigo = secrets.token_hex(8)

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41929cf2-6e2c-4235-a182-264da4b1fa0b" name="Changes" comment="feature: add code for changing profile picture and save img at bd">
-      <change afterPath="$PROJECT_DIR$/sitebarmazzolla/static/fotos_perfil/fotoPerfile2af4300e5f1976a.jpg" afterDir="false" />
+    <list default="true" id="41929cf2-6e2c-4235-a182-264da4b1fa0b" name="Changes" comment="feature: page user show all getting from bd">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitebarmazzolla/barmazzolla.bd" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/barmazzolla.bd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitebarmazzolla/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/static/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/templates/criar_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/criar_post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -374,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667423737909</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="feature: page user show all getting from bd">
+      <created>1667425133061</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1667425133061</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -414,6 +421,7 @@
     <MESSAGE value="feature: add edit perfil; add route; add forms" />
     <MESSAGE value="feature: add code for edit profile, add code for edit photo profile" />
     <MESSAGE value="feature: add code for changing profile picture and save img at bd" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: add code for changing profile picture and save img at bd" />
+    <MESSAGE value="feature: page user show all getting from bd" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: page user show all getting from bd" />
   </component>
 </project>
