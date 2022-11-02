@@ -17,10 +17,12 @@
                     </div>
                 </div>
                 <div class="button mt-2 d-flex flex-row align-items-center">
-                    <button class="btn btn-primary w-100 ml-2", style="background-color: #F09F06; color: #0C0C0C; border:none">Editar Perfil</button>
+                    <a class="w-100" href="{{ url_for('editar_perfil') }}"><button class="btn btn-primary w-100 ml-2", style="background-color: #F09F06; color: #0C0C0C; border:none">Editar Perfil</button></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+{% block form_editar_perfil %}
+{% endblock %}
 {% endblock %}
