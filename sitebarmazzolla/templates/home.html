@@ -9,13 +9,13 @@
     <div class="row mt-4 p-4 meupost">
         <div class="col col-3">
             <div class="image pe-2">
-                <img src="{{ url_for('static', filename='fotos_perfil/{}'.format(post.autor.foto_perfil)) }}" class="rounded" width="155" >
+                <img src="{{ url_for('static', filename='fotos_perfil/{}'.format(post.autor.foto_perfil)) }}" class="img-radius">
             </div>
-            <strong style="text-align:center">{{ post.autor.username }}</strong>
+            <strong style="text-align:center; color: #F09F06">{{ post.autor.username }}</strong>
         </div>
         <div class="col col-9 mt-4 p-4 meupost2">
-            <h3>{{ post.titulo }}</h3>
-            <p>{{ post.corpo }}</p>
+            <a style="color:#0C0C0C; text-decoration: none" href="{{ url_for('exibir_post', post_id=post.id) }}"><h3>{{ post.titulo }}</h3></a>
+            <p style="color:#6C6C6C">{{ post.corpo }}</p>
         </div>
     </div>
     {% endfor %}

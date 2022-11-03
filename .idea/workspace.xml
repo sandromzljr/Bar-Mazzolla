@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41929cf2-6e2c-4235-a182-264da4b1fa0b" name="Changes" comment="feature: page for init a conversation; code for save conversation; fix navbar">
+    <list default="true" id="41929cf2-6e2c-4235-a182-264da4b1fa0b" name="Changes" comment="feature: return all post in home page ordering desc">
+      <change afterPath="$PROJECT_DIR$/sitebarmazzolla/static/fotos_perfil/fotoPerfil3ba767f2c50b9661.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitebarmazzolla/barmazzolla.bd" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/barmazzolla.bd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitebarmazzolla/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitebarmazzolla/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/static/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitebarmazzolla/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/templates/perfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/perfil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -387,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667427300454</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="feature: return all post in home page ordering desc">
+      <created>1667429376347</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1667429376347</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -403,7 +415,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Render Template" />
     <MESSAGE value="Criação block body" />
     <MESSAGE value="Arquivo HTML base" />
     <MESSAGE value="diff" />
@@ -428,6 +439,7 @@
     <MESSAGE value="feature: add code for changing profile picture and save img at bd" />
     <MESSAGE value="feature: page user show all getting from bd" />
     <MESSAGE value="feature: page for init a conversation; code for save conversation; fix navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature: page for init a conversation; code for save conversation; fix navbar" />
+    <MESSAGE value="feature: return all post in home page ordering desc" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature: return all post in home page ordering desc" />
   </component>
 </project>

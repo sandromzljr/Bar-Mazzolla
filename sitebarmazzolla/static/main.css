@@ -33,11 +33,21 @@
     border-style: solid;
     border-width: 2.7px;
     border-color: #852B17;
+    background-color: #852B17;
+    text-align: center;
+    img-border-radius: 50%;
+}
+
+.img-radius {
+    border-radius: 50%;
+    width: 155px;
+    height: 155px;
 }
 
 .meupost2 {
     border-style: solid;
     border-width: 2.7px;
     border-color: #852B17;
+    background-color: #F09F06;
     text-align: justify;
 }

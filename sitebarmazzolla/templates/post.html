@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container mt-4 mb-4">
+    <div class="row mt-4 p-4 meupost">
+        <div class="col col-3">
+            <div class="image pe-2">
+                <img src="{{ url_for('static', filename='fotos_perfil/{}'.format(post.autor.foto_perfil)) }}" class="img-radius">
+            </div>
+            <strong style="text-align:center; color: #F09F06">{{ post.autor.username }}</strong>
+        </div>
+        <div class="col col-9 mt-4 p-4 meupost2">
+            <h3>{{ post.titulo }}  <small style="font-size: 15px" class="text-muted"> - Criado em: {{ post.data_criacao.strftime('%d/%m/%Y') }}
+                {% if form %}
+                - <a class="text-muted" style="text-decoration: none" href="#form_editar_post">Editar Conversa</a> / <a style="text-decoration: none; color: #852B17" href="#" data-bs-toggle="modal" data-bs-target="#ExcluirPost">Excluir Conversa</a>
+                {% endif %}
+            </small></h3>
+            <p>{{ post.corpo }}</p>
+        </div>
+    </div>
+
+    {% if form %}
+    <div class="container w-50">
+        <hr>
+        <div class="row">
+            <form method="post" action="" class="border p-4 mb-2" id="form_editar_post">
+                {{ form.csrf_token }}
+                <legend>Editar Conversa</legend>
+                <fieldset>
+                    <div class="form-group mb-2 w-100">
+                        {{ form.titulo.label(class="form-control-label") }}
+                        {% if form.titulo.errors %}
+                        {{ form.titulo(class="form-control is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for erro in form.titulo.errors %}
+                            {{ erro }}
+                            {% endfor %}
+                        </div>
+                        {% else %}
+                        {{ form.titulo(class="form-control") }}
+                        {% endif %}
+                    </div>
+                    <div class="form-group mb-2 w-100">
+                        {{ form.corpo.label(class="form-control-label") }}
+                        {% if form.corpo.errors %}
+                        {{ form.corpo(class="form-control is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for erro in form.corpo.errors %}
+                            {{ erro }}
+                            {% endfor %}
+                        </div>
+                        {% else %}
+                        {{ form.corpo(class="form-control") }}
+                        {% endif %}
+                    </div>
+                </fieldset>
+                {{ form.botao_submit(class="btn btn-primary", style="background-color: #852B17; border:none") }}
+            </form>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="modal" tabindex="-1" id="ExcluirPost">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">ESTA CONVERSA SERÁ EXCLUÍDA!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Você tem certeza que deseja excluir esta conversa ?</p>
+                    <p>Esta ação não poderá ser desfeita.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NÃO</button>
+                    <form method="POST" action="{{ url_for('excluir_post', post_id=post.id) }}">
+                        <button type="submit" class="btn btn-danger">SIM</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
