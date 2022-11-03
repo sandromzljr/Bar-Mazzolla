@@ -14,10 +14,6 @@ def home():
     return render_template('home.html', posts=posts)
 
 
-@app.route('/sobre')
-def sobre():
-    return render_template('sobre.html')
-
 
 @app.route('/localizacao')
 def localizacao():
