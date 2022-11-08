@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41929cf2-6e2c-4235-a182-264da4b1fa0b" name="Changes" comment="feature: add route for all posts; add anchor for a post; add button for edit post; add route for delete a post; add button for delete a post; fix navbar, perfil, home and user">
-      <change afterPath="$PROJECT_DIR$/sitebarmazzolla/static/maps.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/instance/barmazzolla.bd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mazzollaBar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mazzollaBar.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/barmazzolla.bd" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/barmazzolla.bd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sitebarmazzolla/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/static/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/templates/localizacao.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/localizacao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/navbar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/templates/perfil.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/perfil.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sitebarmazzolla/templates/sobre.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sitebarmazzolla/templates/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitebarmazzolla/templates/user.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +51,7 @@
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/dev/mazzollaBar/sitebarmazzolla/templates&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/dev/Bar-Mazzolla&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -112,9 +108,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="mazzollaBar" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>

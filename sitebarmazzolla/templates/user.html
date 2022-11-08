@@ -2,6 +2,23 @@
 
 {% block body %}
 <div class="container">
+    <div class="row">
+        <div class="col col-3">
+            <div class="button mt-2 d-flex flex-row align-items-center">
+                <a class="w-100" href="{{ url_for('exportUser') }}"><button class="btn btn-primary w-100 ml-3", style="background-color: #852B17; color: #0C0C0C; border:none">Download Usuário</button></a>
+            </div>
+        </div>
+        <div class="col col-3">
+            <div class="button mt-2 d-flex flex-row align-items-center">
+                <a class="w-100" href="{{ url_for('exportPost') }}"><button class="btn btn-primary w-100 ml-3", style="background-color: #852B17; color: #0C0C0C; border:none">Download Post</button></a>
+            </div>
+        </div>
+        <div class="col col-3">
+            <div class="button mt-2 d-flex flex-row align-items-center">
+                <a class="w-100" href="{{ url_for('exportAll') }}"><button class="btn btn-primary w-100 ml-3", style="background-color: #852B17; color: #0C0C0C; border:none">Download Usuário/Post</button></a>
+            </div>
+        </div>
+    </div>
     {% for user in userList %}
     <div class="user mt-5 me-5">
         <div class="row">

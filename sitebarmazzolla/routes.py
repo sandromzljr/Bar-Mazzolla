@@ -1,4 +1,4 @@
-from flask import render_template, redirect, url_for, flash, request, abort
+from flask import render_template, redirect, url_for, flash, request, abort, make_response
 from sitebarmazzolla import app, database, bcrypt
 from sitebarmazzolla.forms import FormLogin, FormCriarConta, FormEditarPerfil, FormCriarPost
 from sitebarmazzolla.models import Usuario, Post
@@ -6,7 +6,13 @@ from flask_login import login_user, logout_user, current_user, login_required
 import secrets
 import os
 from PIL import Image
+import csv
+from io import StringIO
 
+
+@app.before_first_request
+def create_tables():
+    database.create_all()
 
 @app.route('/')
 def home():
@@ -138,3 +144,40 @@ def excluir_post(post_id):
         return redirect(url_for('home'))
     else:
         abort(403)
+
+
+@app.route('/export/user', methods=['GET'])
+def exportUser():
+    si = StringIO()
+    cw = csv.writer(si)
+    records = Usuario.query.all()  # or a filtered set, of course
+    # any table method that extracts an iterable will work
+    cw.writerows([(r.id, r.username, r.email) for r in records])
+    response = make_response(si.getvalue())
+    response.headers['Content-Disposition'] = 'attachment; filename=reportUser.csv'
+    response.headers["Content-type"] = "text/csv"
+    return response
+
+@app.route('/export/post', methods=['GET'])
+def exportPost():
+    si = StringIO()
+    cw = csv.writer(si)
+    records = Post.query.all()  # or a filtered set, of course
+    # any table method that extracts an iterable will work
+    cw.writerows([(r.id, r.titulo, r.corpo) for r in records])
+    response = make_response(si.getvalue())
+    response.headers['Content-Disposition'] = 'attachment; filename=reportPost.csv'
+    response.headers["Content-type"] = "text/csv"
+    return response
+
+@app.route('/export/user-post', methods=['GET'])
+def exportAll():
+    si = StringIO()
+    cw = csv.writer(si)
+    records = records = Post.query.all()   # or a filtered set, of course
+    # any table method that extracts an iterable will work
+    cw.writerows([(r.id, r.id_usuario) for r in records])
+    response = make_response(si.getvalue())
+    response.headers['Content-Disposition'] = 'attachment; filename=reportUserID/PostID.csv'
+    response.headers["Content-type"] = "text/csv"
+    return response
